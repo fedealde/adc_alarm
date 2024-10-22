@@ -22,7 +22,7 @@
 ////// END -Alarm configurations
 
 ////// BEGIN - ADC configurations
-//ADC port for alarm configuration
+// ADC port for alarm configuration
 #define ADC_UNIT ADC_UNIT_1
 #define ADC_CH ADC_CHANNEL_3
 ////// END -ADC configurations
@@ -31,11 +31,8 @@
 extern "C" {
 #endif
 
-
-
-
 #ifdef __cplusplus
 }
 #endif
 
-#endif //CONFGS_H
+#endif // CONFGS_H

@@ -11,7 +11,7 @@ extern "C" {
 
 /**
  * @brief Alarm_type type for alarm levels
- * 
+ *
  */
 typedef enum alarm {
   NO_ALARM = 0,
@@ -22,32 +22,33 @@ typedef enum alarm {
 
 /**
  * @brief Alarm app initialization
- * 
- * @return esp_err_t 
+ *
+ * @return esp_err_t
  */
 esp_err_t alarm_app_init(void);
 
 /**
  * @brief Set alarm threshold values
- * 
+ *
  * @param percentage_values Vector pointer of percentage threshold values
- * @return esp_err_t 
+ * @return esp_err_t
  */
 esp_err_t alarm_app_set_values(int *percentage_values);
 
 /**
  * @brief Get the absolute percentage level
- * 
- * @param current_percentage_value Pointer to be filled with absolute percentage level
- * @return esp_err_t 
+ *
+ * @param current_percentage_value Pointer to be filled with absolute percentage
+ * level
+ * @return esp_err_t
  */
 esp_err_t alarm_app_get_abs(int *current_percentage_value);
 
 /**
  * @brief Get the alarm state
- * 
+ *
  * @param alarm_state Pointer to be filled with alarm state
- * @return esp_err_t 
+ * @return esp_err_t
  */
 esp_err_t alarm_app_get_state(alarm_type *alarm_state);
 

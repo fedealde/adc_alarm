@@ -3,8 +3,6 @@
 #include "confgs.h"
 #include <stdbool.h>
 
-
-
 //#define DEBUG
 
 #ifdef DEBUG

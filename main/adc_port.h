@@ -3,7 +3,6 @@
 
 #include "esp_err.h"
 
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -16,4 +15,4 @@ esp_err_t adc_read(int *adc_voltage);
 }
 #endif
 
-#endif //ADC_PORT_H
+#endif // ADC_PORT_H
