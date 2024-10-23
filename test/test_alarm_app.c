@@ -42,11 +42,22 @@ void tearDown(void) {}
  * @brief Realiza el test de inicializacion y lo realiza exitosamente
  *
  */
-void test_alarm_app_init_fail(void) {
+void test_alarm_app_init_pass(void) {
 
   adc_init_ExpectAndReturn(ESP_OK);
 
   TEST_ASSERT_EQUAL(ESP_OK, alarm_app_init());
+}
+
+/**
+ * @brief Realiza el test de inicializacion y lo falla
+ *
+ */
+void test_alarm_app_init_fail(void) {
+
+  adc_init_ExpectAndReturn(ESP_FAIL);
+
+  TEST_ASSERT_EQUAL(ESP_FAIL, alarm_app_init());
 }
 
 /**
